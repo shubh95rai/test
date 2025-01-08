@@ -8,7 +8,7 @@ export default async function HomeTopRow({
   followedProfiles: Profile[];
 }) {
   return (
-    <div className="flex max-w-full gap-2 overflow-x-auto">
+    <div className="flex max-w-full gap-2 overflow-x-auto no-scrollbar">
       <div>
         <button className="flex size-24 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 to-fuchsia-600 text-2xl text-white">
           <FaPlus />
