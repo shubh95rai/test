@@ -15,18 +15,7 @@ export default async function HomeTopRow({
         </button>
         <p className="mt-0.5 text-center text-sm">New Story</p>
       </div>
-      <div>
-        <button className="flex size-24 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 to-fuchsia-600 text-2xl text-white">
-          <FaPlus />
-        </button>
-        <p className="mt-0.5 text-center text-sm">New Story</p>
-      </div>
-      <div>
-        <button className="flex size-24 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500 to-fuchsia-600 text-2xl text-white">
-          <FaPlus />
-        </button>
-        <p className="mt-0.5 text-center text-sm">New Story</p>
-      </div>
+   
 
       {followedProfiles.map((profile) => {
         return (

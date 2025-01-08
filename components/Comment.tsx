@@ -28,11 +28,15 @@ export default function Comment({
               year: "numeric",
               month: "short",
               day: "numeric",
+              
             })}
           </span>
           <span>·</span>
           <span>
-            {createdAt.toLocaleTimeString([], { timeStyle: "short" })}
+            {createdAt.toLocaleTimeString([], {
+              timeStyle: "short",
+              timeZone: "Asia/Kolkata",
+            })}
           </span>
         </div>
       </div>

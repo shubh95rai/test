@@ -9,7 +9,7 @@ export default function Description({
   authorProfile: Profile;
 }) {
   return (
-    <div className="flex gap-4 rounded-md bg-gray-100 dark:bg-neutral-800 p-4 shadow">
+    <div className="flex gap-4 rounded-md bg-gray-100 p-4 shadow dark:bg-neutral-800">
       <div>
         <Avatar src={authorProfile.avatar || ""} />
       </div>
@@ -31,6 +31,7 @@ export default function Description({
           <span>
             {post.createdAt.toLocaleTimeString([], {
               timeStyle: "short",
+              timeZone: "Asia/Kolkata",
             })}
           </span>
         </div>
